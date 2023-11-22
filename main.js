@@ -3,15 +3,14 @@ const btnAdicionar = document.querySelector("#adicionar");
 const btnLimpar = document.querySelector("#limpar");
 const olItens = document.querySelector("#itens");
 
-const li = document.createElement("li");
-li.textContent = "Primeiro";
-console.log(li);
-olItens.appendChild(li);
+adicionaElementoNaLista("Primeiro");
+adicionaElementoNaLista("Segundo");
+adicionaElementoNaLista("Terceiro");
 
-const li2 = document.createElement("li");
-li2.textContent = "Segundo";
-olItens.appendChild(li2);
+function adicionaElementoNaLista(texto) {
+    const li = document.createElement("li");
+    li.textContent = texto;
+    olItens.appendChild(li);
+    
+}
 
-const li3 = document.createElement("li");
-li3.textContent = "Terceiro";
-olItens.appendChild(li3);
